@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../src/contact.css">
+</head>
+
+<body>
+    <main>
+        <form id="contactForm" novalidate>
+            <h2>Contact Us</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" data-testid="test-contact-name" aria-describedby="error-name">
+            <p id="error-name" class="error" data-testid="test-contact-error-name" aria-live="polite"></p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" data-testid="test-contact-email" aria-describedby="error-email">
+            <p id="error-email" class="error" data-testid="test-contact-error-email" aria-live="polite"></p>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" data-testid="test-contact-subject" aria-describedby="error-subject">
+            <p id="error-subject" class="error" data-testid="test-contact-error-subject" aria-live="polite"></p>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" data-testid="test-contact-message"
+                aria-describedby="error-message"></textarea>
+            <p id="error-message" class="error" data-testid="test-contact-error-message" aria-live="polite"></p>
+
+            <button type="submit" data-testid="test-contact-submit">Submit</button>
+            <p class="success" id="successMsg" data-testid="test-contact-success" aria-live="polite"></p>
+
+        </form>
+    </main>
+
+    <script src="../src/contact.js"></script>
+</body>
+
+</html>
