@@ -90,7 +90,6 @@ li {
     border: #006de975 1px solid;
     border-radius: 0%.5rem ;
 }
-/* Responsive Layout */
 @media (min-width: 600px) {
     .profile-header {
         flex-direction: row;
